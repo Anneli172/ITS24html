@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5500/h05.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript" data-name="TokenSigning" data-by="Web-eID extension" src="chrome-extension://ncibgoaomkmdpilpocfeponihegamlic/token-signing-page-script.js"></script></head>
+<body>
+    <div class="container"></div>
+    <div class="header"></div>
+    <header>Portugal vs Island EURO2016</header>
+        <table border="1">
+            <tbody><tr>
+                <td></td>
+                <td><strong>Portugal</strong></td>
+                <td><strong>Island</strong></td>
+            </tr>
+            <tr><td></td>
+            <td><img src="./kodutöö 5_files/Flag_of_Portugal.svg.webp" alt="Portugali lipp" width="100"></td>
+            <td><img src="./kodutöö 5_files/Flag_of_Iceland.svg.png" alt="Islandi lipp" width="100"></td>
+
+        </tr><tr>
+          <td>Võidud</td>  
+          <td>15</td>
+          <td>0</td>
+        </tr>
+        <tr>
+            <td>Viigid</td>
+            <td>5</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Kaotused</td>
+            <td>8</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Löödud väravad</td>
+            <td>1,43</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Sisse lastud väravad</td>
+            <td>0,93</td>
+            <td>0</td>
+        </tr>
+        </tbody></table>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+    
+    
+        </body></html>
